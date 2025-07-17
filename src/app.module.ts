@@ -10,6 +10,7 @@ import { CommonModule } from './common/common.module';
 import { AttemptsModule } from './attempts/attempts.module';
 import * as Joi from 'joi';
 import { AdminController } from './admin.controller';
+import { UserStatsModule } from './user-stats/modules/user-stats.module';
 
 @Module({
   imports: [
@@ -47,6 +48,7 @@ import { AdminController } from './admin.controller';
     AuthModule,
     AttemptsModule,
     UsersModule,
+    UserStatsModule,
     CommonModule,
   ],
   controllers: [AppController, AdminController],

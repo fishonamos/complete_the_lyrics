@@ -108,7 +108,7 @@ export class UserStatsService {
     to?: string;
     category?: string;
   }) {
-    // Implement actual filtering logic as needed
+    // Implement actual filtering logic
     const query = this.userStatsRepository.createQueryBuilder('stats');
     if (userId) query.andWhere('stats.userId = :userId', { userId });
     if (from) query.andWhere('stats.createdAt >= :from', { from });
